@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leosa\\.NETRepository\\todolist\\TODOlist.csproj": {}
+    "C:\\Users\\leosa\\.NETRepository\\TODOlist\\TODOlist.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leosa\\.NETRepository\\todolist\\TODOlist.csproj": {
+    "C:\\Users\\leosa\\.NETRepository\\TODOlist\\TODOlist.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leosa\\.NETRepository\\todolist\\TODOlist.csproj",
+        "projectUniqueName": "C:\\Users\\leosa\\.NETRepository\\TODOlist\\TODOlist.csproj",
         "projectName": "TODOlist",
-        "projectPath": "C:\\Users\\leosa\\.NETRepository\\todolist\\TODOlist.csproj",
+        "projectPath": "C:\\Users\\leosa\\.NETRepository\\TODOlist\\TODOlist.csproj",
         "packagesPath": "C:\\Users\\leosa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leosa\\.NETRepository\\todolist\\obj\\",
+        "outputPath": "C:\\Users\\leosa\\.NETRepository\\TODOlist\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leosa\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,6 +42,22 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.21.140, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

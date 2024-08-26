@@ -1,4 +1,11 @@
+global using TODOlist.Models;
+global using TODOList.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<dbContext>(options =>
+    options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
